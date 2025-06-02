@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecnoShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js" defer></script>
+</head>
+
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 flex items-center justify-between md:justify-center relative">
+        <!-- Logo -->
+        <div class="text-5xl font-bold absolute left-4 text-verde-manzana">UniData</div>
+
+        <!-- Menú de navegación -->
+        <nav class="hidden md:flex gap-6 text-2xl" id="desktop-menu">
+            <a href="./index.html" class="hover:text-gray-300">Inicio</a>
+            <a href="./servicio.html" class="hover:text-gray-300">Servicio Técnico</a>
+            <a href="#contacto" class="hover:text-gray-300">Contacto</a>
+        </nav>
+
+        <!-- Redes sociales (visible solo en pantallas md en adelante) -->
+        <div class="hidden md:flex gap-6 items-center absolute right-4 text-3xl">
+            <a href="https://www.facebook.com/unidata.soluciones.informaticas" target="_blank" aria-label="Facebook"
+                class="hover:text-blue-500 transition-colors duration-300">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F%3Fhl%3Des-la"
+                target="_blank" aria-label="Instagram" class="hover:text-pink-500 transition-colors duration-300">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank" aria-label="Twitter"
+                class="hover:text-blue-400 transition-colors duration-300">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5491156363993&text&type=phone_number&app_absent=0"
+                target="_blank" aria-label="WhatsApp" class="hover:text-green-500 transition-colors duration-300">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- Botón menú hamburguesa en mobile -->
+        <button class="md:hidden absolute right-4" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Responsive Menu -->
+    <nav class="bg-gray-800 text-white flex-col gap-4 p-4 hidden md:hidden" id="mobile-menu">
+        <a href="#" class="hover:text-gray-300 block">Inicio</a>
+        <!--<a href="#" class="hover:text-gray-300 block">Productos</a>-->
+        <a href="#" class="hover:text-gray-300 block">Servicio Técnico</a>
+        <a href="#" class="hover:text-gray-300 block">Contacto</a>
+    </nav>
+
+    <!-- Sección de Banners -->
+    <section class="py-6 bg-white">
+        <div class="max-w-6x1 mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <img src="../img/servicio.jpg" alt="Banner 5"
+                    class="w-full md:w-1/1 rounded-lg shadow-md h-58 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h1>Unidata Soluciones Informáticas</h1>
+            <p><strong>Servicio Técnico Profesional en Haedo desde 1994</strong></p>
+            <p>En Unidata Soluciones Informáticas nos especializamos en brindar atención técnica confiable, rápida y
+                personalizada para resolver cualquier inconveniente con sus equipos informáticos.</p>
+            <p>Con más de 30 años de experiencia en el rubro, ofrecemos soluciones efectivas en reparación de PC,
+                notebooks, tablets, impresoras, monitores y más.</p>
+            <p>Contamos con servicio técnico en laboratorio y también a domicilio, adaptándonos a las necesidades de
+                nuestros clientes. Además, somos expertos en configuración e instalación de redes, tanto para hogares
+                como para empresas.</p>
+            <p>Nuestra trayectoria y compromiso nos han convertido en una referencia en Haedo. Quienes nos eligen saben
+                que reciben un trato profesional, cercano y soluciones duraderas para sus equipos.</p>
+            <p><strong>Visítenos o llámenos. En Unidata, su tecnología está en buenas manos.</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-semibold mb-4">Seguinos en redes</h3>
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="https://www.facebook.com/unidata.soluciones.informaticas"
+                    class="text-2xl hover:text-verde-manzana transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F%3Fhl%3Des-la"
+                    class="text-2xl hover:text-verde-manzana transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhome"
+                    class="text-2xl hover:text-verde-manzana transition-colors"><i class="fab fa-twitter"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5491156363993&text&type=phone_number&app_absent=0"
+                    class="text-2xl hover:text-verde-manzana transition-colors"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <div class="mb-6 text-gray-300 space-y-2">
+                <p><strong>Email:</strong> <a href="mailto:contacto@unidata.com"
+                        class="hover:text-verde-manzana transition-colors">unidata11@msn.com</a></p>
+                <p><strong>Teléfono:</strong> <a href="tel:+5491123456789"
+                        class="hover:text-verde-manzana transition-colors">+54 9 11 5636-3993</a></p>
+                <p><strong>Dirección:</strong> Constitución 127 Haedo, Buenos Aires, Argentina</p>
+            </div>
+
+            <p class="text-sm text-gray-400">&copy; 2025 UniData. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5491156363993" target="_blank" aria-label="WhatsApp"
+        class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="font-medium">¡Chateá con nosotros!</span>
+    </a>
+
+    <script src="../js/code.js"></script>
+</body>
+
+</html>
